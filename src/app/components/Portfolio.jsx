@@ -110,7 +110,7 @@ export default function Portfolio() {
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-16">
+        {/* <div className="flex flex-wrap justify-center gap-4 mb-16">
           {categories.map((category) => (
             <button
               key={category}
@@ -124,10 +124,10 @@ export default function Portfolio() {
               {category}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Projects Grid */}
-        <div className="column columns-1 lg:columns-2 xl:columns-3 gap-8 max-w-7xl mx-auto">
+        <div className="column columns-1 lg:columns-2 xl:columns-3 gap-8  mx-auto">
           {filteredProjects.map((project, index) => (
             <div 
               key={index}
@@ -220,50 +220,7 @@ export default function Portfolio() {
             </div>
           ))}
         </div>
-
-        {/* Stats & CTA Section */}
-        <div className="mt-24 bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-16  mx-auto text-white">
-          <div className="text-center mb-16">
-            <h3 className="text-3xl font-bold mb-6">
-              Proven Results, Measurable Impact
-            </h3>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Our commitment to excellence is reflected in the numbers that matter most to your business growth.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center mb-16">
-            {[
-              { number: '200+', label: 'Projects Delivered' },
-              { number: '98%', label: 'Client Satisfaction' },
-              { number: '150+', label: 'Happy Clients' },
-              { number: '24/7', label: 'Dedicated Support' }
-            ].map((stat, index) => (
-              <div key={index} className="p-6">
-                <div className="text-4xl font-bold text-white mb-3">{stat.number}</div>
-                <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA */}
-          <div className="text-center pt-8 border-t border-gray-700">
-            <h4 className="text-2xl font-semibold mb-6">
-              Ready to Start Your Next Project?
-            </h4>
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto text-lg">
-              Let's discuss your vision and create a solution that exceeds your expectations.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="bg-white text-gray-900 hover:bg-gray-100 px-10 py-5 rounded-xl font-semibold text-lg transition-colors duration-300 shadow-2xl">
-                Start Your Project
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-5 rounded-xl font-semibold text-lg transition-all duration-300">
-                Schedule Consultation
-              </button>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </section>
   );

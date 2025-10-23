@@ -143,25 +143,7 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16 lg:mt-20">
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Ready to Transform Your Digital Presence?
-            </h3>
-            <p className="text-gray-600 mb-6">
-              Let's discuss how our services can help you achieve your business goals.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-[#FF6B35] hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25">
-                Start Your Project
-              </button>
-              <button className="border-2 border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 px-8 py-4 rounded-xl font-semibold transition-all duration-300">
-                View Case Studies
-              </button>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </section>
   );
